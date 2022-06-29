@@ -1,0 +1,44 @@
+body {
+    background-color: #CCC;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.selection {
+   background: none;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   font-size: 2rem;
+   transition: 100ms;
+   margin-bottom: 70px;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
+
+.game-container {
+    max-width: 900px;
+    border: 1px solid red;
+    margin: auto;
+    height: auto;
+}
+
+.display-container {
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.winner {
+    text-align: center;
+}
+
+
+

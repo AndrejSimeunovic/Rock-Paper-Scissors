@@ -5,6 +5,27 @@ let playerWins = false;
 let round = 1;
 let choices = ["Rock", "Paper", "Scissor"];
 
+let buttons = document.getElementsByClassName('selections')[0].getElementsByClassName('selection')
+console.log(buttons)
+
+for(var i = 0; i < buttons.length; i++){
+  var button = buttons[i]
+  button.addEventListener('click',getChoice)
+
+}
+
+function getChoice(event){
+     console.log(event.target)
+     convertIconToString(event.target.innerText)
+}
+
+function convertIconToString(icon) {
+ // TODO
+ 
+  
+}
+
+
 function computerPlay() {
   return choices[Math.floor(Math.random() * choices.length)];
 }
@@ -96,25 +117,24 @@ function printResult() {
 }
 
 function game() {
-  for (let i = 0; i < 5; i++) {
-    let playerSelection = prompt("Choose rock, paper or scissor");
+  let playerSelection = prompt("Choose rock, paper or scissor");
 
-    if (playerSelection !== null) {
-      while (validateInput(playerSelection)) {
-        playerSelection = prompt(
-          "Type Rock, Paper, or Scissors. Spelling needs to be exact, but capitilization doesnt matter"
-        );
-        if (playerSelection === null) {
-          return alert("Thanks for playing!");
-        }
+
+  if (playerSelection !== null) {
+    while (validateInput(playerSelection)) {
+      playerSelection = prompt(
+        "Type Rock, Paper, or Scissors. Spelling needs to be exact, but capitilization doesnt matter"
+      );
+      if (playerSelection === null) {
+        return alert("Thanks for playing!");
       }
-      let computerSelection = computerPlay();
-      console.log(playRound(playerSelection, computerSelection));
-    } else {
-      return alert("Thanks for playing!");
-      
     }
+    let computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+  } else {
+    return alert("Thanks for playing!");
   }
+
   getWinner();
 }
 
@@ -137,4 +157,6 @@ function validateInput(input) {
     return true;
   }
 }
-game();
+//game();
+
+

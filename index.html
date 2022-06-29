@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script defer src="script.js"></script>
-</head>
-<body>
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="selections">
+      <button class="selection" class="rock" type="button">👊</button>
+      <button class="selection" class="paper" type="button">✋</button>
+      <button class="selection" class="scissor" type="button">✌️</button>
+    </div>
+
+    <div class="game-container">
+      <div class="display-container">
+        
+        <div class="you-score-container">
+          You
+          <span class="score">5</span>
+        </div>
+
+        <div class="computer-score-container">
+          Computer
+          <span class="score">0</span>
+        </div>
+
+      </div>
+
+      <div class="round-container">
+        <div class="round display-container">
+          <span>👊</span>
+          <span>✌️</span>
+        </div>
+        <div class="round display-container">
+          <span>👊</span>
+          <span>✌️</span>
+        </div>
+        <div class="round display-container">
+          <span>👊</span>
+          <span>✌️</span>
+        </div>
+        <div class="round display-container">
+          <span>👊</span>
+          <span>✌️</span>
+        </div>
+        <div class="round display-container">
+          <span>👊</span>
+          <span>✌️</span>
+        </div>
+      </div>
+
+      <div class="winner">
+        <p>congratulations! you have won!</p>
+      </div>
+    </div>
+  </body>
 </html>
