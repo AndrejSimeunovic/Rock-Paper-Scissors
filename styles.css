@@ -13,7 +13,7 @@ body {
    border: none;
    outline: none;
    cursor: pointer;
-   font-size: 2rem;
+   font-size: 5rem;
    transition: 100ms;
    margin-bottom: 70px;
 }
@@ -24,13 +24,11 @@ body {
 
 .game-container {
     max-width: 900px;
-    border: 1px solid red;
     margin: auto;
     height: auto;
 }
 
 .display-container {
-    border: 1px solid green;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -38,6 +36,14 @@ body {
 
 .winner {
     text-align: center;
+}
+
+.btn {
+    border-radius: .3em;
+}
+
+.round span {
+    font-size: 5em;
 }
 
 
