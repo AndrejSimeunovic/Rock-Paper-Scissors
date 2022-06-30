@@ -138,5 +138,5 @@ function deleteIcons() {
   while (parent.hasChildNodes()) {
     parent.removeChild(parent.firstChild);
   }
-  document.getElementsByClassName('instruction')[0].remove()
+  document.getElementsByClassName("instruction")[0].remove();
 }

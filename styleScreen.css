@@ -1,9 +1,9 @@
 body {
   /*background-color: #ccc;*/
-    background-image: url('images/background-img.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
+  background-image: url('images/background-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .instruction {
@@ -20,7 +20,7 @@ a {
   font-size: larger;
 }
 
-a:hover{
+a:hover {
   color: red;
 }
 
@@ -66,7 +66,7 @@ a:hover{
   display: flex;
   justify-content: center;
   gap: 100px;
-  
+
 }
 
 .winner {
@@ -74,6 +74,7 @@ a:hover{
   background-color: rgb(71, 47, 47);
   border-radius: 1em;
 }
+
 .winner p {
   color: yellowgreen;
   font-weight: 900;
