@@ -1,0 +1,19 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.container button {
+  font-size: large;
+  margin: 1em;
+  cursor: pointer;
+  border-radius: 0.3em;
+  border: none;
+  background-color: aqua;
+  padding: 3em;
+}
+
+.container button:hover {
+  background-color: yellow;
+}

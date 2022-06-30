@@ -95,6 +95,8 @@ function printResult() {
 }
 
 function game() {
+  round = 1;
+  console.clear();
   for (let i = 0; i < 5; i++) {
     let playerSelection = prompt("Choose rock, paper or scissor");
 
@@ -111,7 +113,6 @@ function game() {
       console.log(playRound(playerSelection, computerSelection));
     } else {
       return alert("Thanks for playing!");
-      
     }
   }
   getWinner();
@@ -136,4 +137,5 @@ function validateInput(input) {
     return true;
   }
 }
-game();
+
+document.getElementsByClassName("btn")[0].addEventListener("click", game);

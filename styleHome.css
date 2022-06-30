@@ -1,0 +1,33 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.btn-container {
+  text-align: center;
+  padding: 5em;
+}
+
+.btn-container a button {
+  font-size: large;
+  margin: 1em;
+  cursor: pointer;
+  border-radius: 0.3em;
+  border: none;
+  background-color: aqua;
+  padding: 3em;
+}
+
+.btn-container button:hover {
+  background-color: yellow;
+}
+
+.btn-container button a {
+  text-decoration: none;
+  color: black;
+}
