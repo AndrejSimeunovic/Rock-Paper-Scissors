@@ -1,5 +1,27 @@
 body {
-  background-color: #ccc;
+  /*background-color: #ccc;*/
+    background-image: url('images/background-img.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+.instruction {
+  text-align: center;
+  color: yellow;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 0%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+a:hover{
+  color: red;
 }
 
 .selections {
@@ -22,6 +44,18 @@ body {
   transform: scale(1.2);
 }
 
+.computer-score-container {
+  color: yellow;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.you-score-container {
+  color: yellow;
+  font-weight: 900;
+  font-size: larger;
+}
+
 .game-container {
   max-width: 900px;
   margin: auto;
@@ -32,10 +66,17 @@ body {
   display: flex;
   justify-content: center;
   gap: 100px;
+  
 }
 
 .winner {
   text-align: center;
+  background-color: rgb(71, 47, 47);
+  border-radius: 1em;
+}
+.winner p {
+  color: yellowgreen;
+  font-weight: 900;
 }
 
 .btn {

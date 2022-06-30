@@ -1,7 +1,30 @@
+body {
+  background-image: url('images/background-img.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .container {
   max-width: 900px;
   margin: auto;
   text-align: center;
+}
+
+h2 {
+  background-color: rgb(71, 47, 47);
+  color: yellowgreen;
+  border-radius: 1em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+a:hover{
+  color: red;
 }
 
 .container button {
